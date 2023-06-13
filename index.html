@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div id="app">
+            <h1>Health Information System</h1>
+            <ul>
+              <li><a href="patients.html">Patients</a></li>
+              <li><a href="doctors.html">Doctors</a></li>
+              <li><a href="appointments.html">Appointments</a></li>
+            </ul>
+          </div>
+
+
+
+         
+          <!-- Patient Records -->
+<div id="patient-records">
+    <h2>Patient Records</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>Name</th>
+          <th>Date of Birth</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1234567989</td>
+          <td>Angeth Herjok</td>
+          <td>2002-01-01</td>
+          <td>Female</td>
+          <td>123 Main Street, Juba, CA 12345</td>
+          <td>(+254) 759 942 644 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- form -->
+
+  <form id="patient-data-form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="date" id="date-of-birth" placeholder="Date of birth">
+    <textarea id="medical-history" placeholder="Medical history"></textarea>
+    <input type="text" id="medications" placeholder="Medications">
+    <button type="submit">Save</button>
+  </form>
+
+<!-- Doctor's Notes -->
+<div id="doctors-notes">
+    <h2>Doctor's Notes</h2>
+    <textarea id="doctors-notes-textarea"></textarea> 
+  </div>
+
+  <!-- Appointment Scheduling -->
+<div id="appointment-scheduling">
+    <h2>Appointment Scheduling</h2>
+    <form id="appointment-scheduling-form">
+      <div class="form-group">
+        <label for="patient-id">Patient ID</label>
+        <input type="text" class="form-control" id="patient-id" placeholder="Enter patient ID">
+      </div>
+      <div class="form-group">
+        <label for="doctor-id">Doctor ID</label>
+        <input type="text" class="form-control" id="doctor-id" placeholder="Enter doctor ID">
+      </div>
+      <div class="form-group">
+        <label for="appointment-date">Appointment Date</label>
+        <input type="date" class="form-control" id="appointment-date">
+      </div>
+      <div class="form-group">
+        <label for="appointment-time">Appointment Time</label>
+        <input type="time" class="form-control" id="appointment-time">
+      </div>
+      <button type="submit" class="btn btn-primary">Schedule Appointment</button>
+    </form>
+  </div>
+
+  <!-- Messaging -->
+<div id="messaging">
+    <h2>Messaging</h2>
+    <div class="messages">
+      <ul>
+        <li>
+          <h4>Angeth Herjok</h4>
+          <p>Hello, how are you?</p>
+        </li>
+        <li>
+          <h4>Rebecca Angeth</h4>
+          <p>I'm doing well, thank you for asking. How are you?</p>
+        </li>
+      </ul>
+    </div>
+    <div class="new-message">
+      <input type="text" placeholder="Enter message...">
+      <button type="submit">Send</button>
+    </div>
+  </div>
+
+  
+
+  <!-- Reports -->
+<div id="reports">
+    <h2>Reports</h2>
+    <ul>
+      <li><a href="#">Appointment Reports</a></li>
+      <li><a href="#">Patient Reports</a></li>
+      <li><a href="#">Doctor Reports</a></li>
+      <li><a href="#">Other Reports</a></li>
+    </ul>
+    <div class="report-generator">
+      <h3>Generate Reports</h3>
+      <form>
+        <select name="report-type">
+          <option value="appointment">Appointment Reports</option>
+          <option value="patient">Patient Reports</option>
+          <option value="doctor">Doctor Reports</option>
+          <option value="other">Other Reports</option>
+        </select>
+        <input type="submit" value="Generate Report">
+      </form>
+    </div>
+    <div class="report-downloader">
+      <h3>Download Reports</h3>
+      <ul>
+        <li><a href="appointments.html">Appointment Reports (PDF)</a></li>
+        <li><a href="patients.html">Patient Reports (CSV)</a></li>
+        <li><a href="doctors.html">Doctor Reports (Excel)</a></li>
+        <li><a href="index.html">Other Reports (PDF)</a></li>
+      </ul>
+    </div>
+    <div class="report-sharer">
+      <h3>Share Reports</h3>
+      <ul>
+        <li><a href="#">Email Report</a></li>
+        <li><a href="#">Print Report</a></li>
+        <li><a href="#">Share Report on Social Media</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- File upload feature -->
+<input type="file" id="file-upload">
+
+<!-- Chat feature -->
+<div id="chat-box"></div>
+<input type="text" id="chat-input">
+<button type="button" id="chat-send">Send</button>
+
+<!-- Payment feature -->
+<input type="text" id="payment-amount">
+<button type="button" id="payment-submit">Pay</button>
+
+<!-- Scheduling feature -->
+<input type="date" id="appointment-date">
+<select id="appointment-time">
+  <option>10:00 AM</option>
+  <option>11:00 AM</option>
+  <option>12:00 PM</option>
+  <option>1:00 PM</option>
+  <option>2:00 PM</option>
+  <option>3:00 PM</option>
+  <option>4:00 PM</option>
+</select>
+<button type="button" id="appointment-submit">Schedule</button>
+
+<!-- Reminder feature -->
+<input type="text" id="reminder-date">
+<input type="text" id="reminder-time">
+<input type="text" id="reminder-message">
+<button type="button" id="reminder-submit">Set Reminder</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

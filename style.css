@@ -1,0 +1,431 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  #app {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+
+
+  /* patients record */
+
+  #patient-records {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  table {
+    border-collapse: collapse;
+    background-color: #eee;
+  }
+  
+  tr:nth-of-type(odd) {
+    background-color: #fff;
+  }
+  table tr:hover {
+    background-color: #ccc;
+  }
+
+
+  /* doctor's notes */
+  #doctors-notes {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  textarea {
+    border: none;
+  }
+  textarea {
+    font-size: 16px;
+  }
+  #appointment-scheduling {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  form {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* messaging */
+
+  #messaging {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .messages li {
+    margin-bottom: 10px;
+  }
+  
+  .messages li h4 {
+    font-size: 16px;
+  }
+  
+  .messages li p {
+    margin-bottom: 5px;
+  }
+  
+  .new-message {
+    margin-top: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* reports */
+  #reports {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .report-generator {
+    margin-top: 10px;
+  }
+  
+  .report-downloader {
+    margin-top: 10px;
+  }
+  
+  .report-sharer {
+    margin-top: 10px;
+  }
+  /* form */
+  #patient-data-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  th {
+    background-color: #eee;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+
+  /* File upload feature */
+#file-upload {
+     border: 1px solid #ccc; 
+    padding: 10px;
+    
+  }
+  
+  /* Chat feature */
+  #chat-box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #chat-input {
+    width: 200px;
+  }
+  
+  #chat-send {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Payment feature */
+  #payment-amount {
+    width: 100px;
+  }
+  
+  #payment-submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Scheduling feature */
+  #appointment-date {
+    width: 100px;
+  }
+  
+  #appointment-time {
+    width: 100px;
+  }
+  
+  #appointment-submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Reminder feature */
+  #reminder-date {
+    width: 100px;
+  }
+  
+  #reminder-time {
+    width: 100px;
+  }
+  
+  #reminder-message {
+    width: 300px;
+  }
+  
+  #reminder-submit {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+  /* patients.html */
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+
+  /* Doctors.html list */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+
+  /* Appointments list */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+
+  /* View link */
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  /* Patient record */
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    background-color: #ccc;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+  }
+  
+  td:nth-child(1) {
+    width: 150px;
+  }
+  
+  td:nth-child(2) {
+    width: 100px;
+  }
+  
+  td:nth-child(3) {
+    width: 200px;
+  }
+  
+  td:nth-child(4) {
+    width: 300px;
+  }
+  
+  td:nth-child(5) {
+    width: 200px;
+  }
+
+
+
+
+
+
+ 
+/* @media (min-width: 768px) {
+
+    
+    table {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+  
+    table td, table th {
+      font-size: 16px;
+    }
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+  
+    
+    table {
+      display: block;
+      width: 100%;
+    }
+    table {
+      text-align: center;
+    }
+    table td, table th {
+      font-size: 14px;
+    } */
+  
+  /* } */
+  
